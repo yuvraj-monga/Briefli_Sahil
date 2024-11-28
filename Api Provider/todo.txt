@@ -1,0 +1,6 @@
+user / 
+
+unique_id / user name
+newsinteractions 
+likes 
+viewed
