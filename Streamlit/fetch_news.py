@@ -6,7 +6,7 @@ from pymongo import MongoClient
 import streamlit as st
 
 # MongoDB connection string
-MONGO_URL = 'mongodb+srv://mirzanausadallibaig:Sahil%23123@cluster0.mhg9q.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0'
+MONGO_URL = 'mongodb+srv://yuvrajmonga95:VlErsuIk872sktLv@cluster0.qjzvc.mongodb.net?retryWrites=true&w=majority&appName=Cluster0'
 
 # Initialize MongoDB client
 mongo_client = MongoClient(MONGO_URL)
@@ -17,7 +17,7 @@ categories_collection = db['categories']
 
 # Initialize the summarization model
 client = Client("yuvrajmonga/google-pegasus-cnn_dailymail")
-News_Category_client = Client("mssab/News_Categorization")
+News_Category_client = Client("yuvrajmonga/News_Categorization")
 
 
 def fetch_rss_feed(rss_url):
