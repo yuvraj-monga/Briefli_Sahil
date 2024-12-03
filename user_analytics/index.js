@@ -1,5 +1,5 @@
 import express from "express";
-import { database } from "./firebase/firebaseAdminconfig.js"; 
+import { database } from "./GF/firebaseAdminconfig.js"; 
 import { MongoClient } from "mongodb"; 
 import cron from "cron";
 
