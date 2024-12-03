@@ -7,7 +7,7 @@ const app = express();
 
 // MongoDB connection string
 const MONGO_URL =
-  "mongodb+srv://mirzanausadallibaig:Sahil%23123@cluster0.mhg9q.mongodb.net?retryWrites=true&w=majority&appName=Cluster0"; // Replace with your actual MongoDB connection string
+  "mongodb+srv://yuvrajmonga95:VlErsuIk872sktLv@cluster0.qjzvc.mongodb.net?retryWrites=true&w=majority&appName=Cluster0"; // Replace with your actual MongoDB connection string
 
 // Initialize MongoDB client
 const client = new MongoClient(MONGO_URL);
@@ -82,7 +82,7 @@ app.get("/", (req, res) => {
 // Start MongoDB connection and create collection
 connectToMongoDB().then(createCollection).catch(console.error);
 
-const cronJob = new cron.CronJob("*/1 * * * *", fetchAndStoreData);
+const cronJob = new cron.CronJob("*/9 * * * *", fetchAndStoreData);
 cronJob.start();
 
 const PORT = process.env.PORT || 3000;
