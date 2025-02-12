@@ -20,11 +20,11 @@ router.get("/", async (req, res) => {
 
       articles = await Article.find({ category: category._id })
         .populate("category", "name")
-        .sort({ published: 1 }); //Latest news sorted first
+        .sort({ published: -1 }); //Latest news sorted first
     } else {
       articles = await Article.find()
         .populate("category", "name")
-        .sort({ published: 1 });
+        .sort({ published: -1 });
     }
 
     res.json(articles);
